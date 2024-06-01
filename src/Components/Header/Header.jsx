@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import logo from "../../Assets/Logo.png";
 import CountryDropdown from "../CountryDropdown/CountryDropdown";
 import { Button } from "@mui/material";
-import { IoMdSearch } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import SearchBox from "./SearchBox/SearchBox";
+import Navbar from "./NavBar/Navbar";
 const Header = () => {
   return (
     <div>
@@ -30,10 +31,7 @@ const Header = () => {
 
                 {/*-----------------------Search bar start here--------------------------*/}
                 <div className="headerSearch ms-3 me-3">
-                  <input type="text" placeholder="Search The Products Here" />
-                  <Button>
-                    <IoMdSearch />
-                  </Button>
+                  <SearchBox />
                 </div>
                 {/*-----------------------Search bar end here----------------------------*/}
 
@@ -48,7 +46,9 @@ const Header = () => {
                       <Button className="circle">
                         <MdOutlineShoppingCart />
                       </Button>
-                      <span className="count d-flex align-items-center justify-content-center">1</span>
+                      <span className="count d-flex align-items-center justify-content-center">
+                        1
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -57,6 +57,9 @@ const Header = () => {
             </div>
           </div>
         </header>
+
+        {/* -------------------------Navbar---------------- */}
+        <Navbar/>
       </div>
     </div>
   );
