@@ -4,6 +4,8 @@ import logo from "../../Assets/Logo.png";
 import CountryDropdown from "../CountryDropdown/CountryDropdown";
 import { Button } from "@mui/material";
 import { IoMdSearch } from "react-icons/io";
+import { FiUser } from "react-icons/fi";
+import { MdOutlineShoppingCart } from "react-icons/md";
 const Header = () => {
   return (
     <div>
@@ -34,6 +36,23 @@ const Header = () => {
                   </Button>
                 </div>
                 {/*-----------------------Search bar end here----------------------------*/}
+
+                {/*----------------------- User start here--------------------------*/}
+                <div className="d-flex align-items-center part3">
+                  <Button className="circle">
+                    <FiUser />
+                  </Button>
+                  <div className="cartTab d-flex align-items-center">
+                    <span>Rs.100</span>
+                    <div className="position-relative">
+                      <Button className="circle">
+                        <MdOutlineShoppingCart />
+                      </Button>
+                      <span className="count d-flex align-items-center justify-content-center">1</span>
+                    </div>
+                  </div>
+                </div>
+                {/*-----------------------User end here----------------------------*/}
               </div>
             </div>
           </div>

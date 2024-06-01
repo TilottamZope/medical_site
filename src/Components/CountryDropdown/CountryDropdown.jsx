@@ -9,7 +9,7 @@ const CountryDropdown = () => {
           <span className="label">Your Location</span>
           <span className="name">India</span>
         </div>
-        <span className="ms-4"><FaAngleDown/></span>
+        <span className="ms-5"><FaAngleDown/></span>
       </Button>
     </div>
   );
