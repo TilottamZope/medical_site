@@ -19,6 +19,19 @@ body {
   }
 }
 
+::-webkit-scrollbar{
+  width: 8px !important;
+  height: 8% !important;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #ccc !important; 
+}
+
+::-webkit-scrollbar-track{
+  background: transparent !important;
+}
+
 .headerWrapper .top-strip {
   padding: 8px 0px;
 }
@@ -74,9 +87,51 @@ body {
   font-weight: 700;
 }
 
+/* -----------------------------------Country List------------------------------------- */
+
+.locationModal .MuiPaper-elevation{
+  padding: 15px;
+  position: relative;
+}
+
+.locationModal .cityList{
+  margin-bottom: 0px;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.locationModal .cityList li{
+  width: 100%;
+  list-style: none;
+}
+
+.locationModal .cityList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000 !important;
+  justify-content: flex-start !important;
+  padding: 15px 20px;
+}
+
+.locationModal .close_{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: #000 !important;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+
+.locationModal .close_ svg{
+  font-size: 25px;
+}
+
 /* -----------------------------------Search Bar------------------------------------- */
 
-header .headerSearch {
+.headerSearch {
   width: 60%;
   height: 50px;
   background: #f3f4f7;
@@ -86,7 +141,7 @@ header .headerSearch {
   border-radius: 5px;
 }
 
-header .headerSearch input {
+.headerSearch input {
   background: transparent !important;
   outline: none !important;
   font-size: 15px;
@@ -97,20 +152,21 @@ header .headerSearch input {
   padding: 0px 20px !important;
 }
 
-header .headerSearch button {
+.headerSearch button {
   position: absolute;
-  top: 15px;
+  top: 5px;
   right: 15px;
   z-index: 100;
   min-width: 40px !important;
-  height: 20px !important;
+  height: 40px !important;
   width: 40px !important;
   border-radius: 50% !important;
   color: #000;
 }
 
-header .headerSearch button svg {
+.headerSearch button svg {
   font-size: 24px;
+  opacity: 0.8;
 }
 
 /* -----------------------------------Account------------------------------------- */
@@ -159,6 +215,7 @@ header .part3 .circle svg {
 
 /* -----------------------------------Navbar------------------------------------- */
 
+
 nav .allCatTab {
   background: #2bbef9;
   padding: 10px 20px !important;
@@ -182,3 +239,28 @@ nav .allCatTab .icon2 svg{
   font-size: 15px !important;
 }
 
+nav .navPart2 ul{
+  margin-bottom: 0px;
+}
+
+nav .navPart2 ul li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  transition:all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+
+nav .navPart2 ul li a svg{
+  font-size: 18px;
+}
+
+nav .navPart2 ul li a:hover{
+  background: #2bbef9; 
+  color:#f0faff;
+}

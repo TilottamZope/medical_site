@@ -2,6 +2,13 @@ import { Button } from '@mui/material'
 import React from 'react'
 import { MdMenu } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+import { IoMdHome } from "react-icons/io";
+import { BiSolidOffer } from "react-icons/bi";
+import { MdCall } from "react-icons/md";
+import { MdPhoto } from "react-icons/md";
+import { FcAbout } from "react-icons/fc";
+import { FaRegNewspaper } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div>
@@ -15,7 +22,16 @@ const Navbar = () => {
                   <span className='icon2 ms-2'><FaAngleDown/></span>
                 </Button>
               </div>
-              <div className="col-sm-9 navPart2"></div>
+              <div className="col-sm-9 navPart2 d-flex align-items-center">
+                <ul className='list list-inline ms-auto'>
+                  <li className='list-inline-item'><Link to="/"><IoMdHome/> &nbsp;Home</Link></li>
+                  <li className='list-inline-item'><Link to="/"><FcAbout/> &nbsp;About Us</Link></li>
+                  <li className='list-inline-item'><Link to="/"><FaRegNewspaper/> &nbsp;Blog</Link></li>
+                  <li className='list-inline-item'><Link to="/"><MdCall/> &nbsp;Contact Us</Link></li>
+                  <li className='list-inline-item'><Link to="/"><MdPhoto/> &nbsp;Gallery</Link></li>
+                  <li className='list-inline-item'><Link to="/"><BiSolidOffer/> &nbsp;Offers</Link></li>
+                </ul>
+              </div>
             </div>
           </div> 
         </nav>
