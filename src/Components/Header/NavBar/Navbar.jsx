@@ -10,7 +10,7 @@ import { TbBrandSketch } from "react-icons/tb";
 import { FcAbout } from "react-icons/fc";
 import { FaRegNewspaper } from "react-icons/fa";
 const Navbar = () => {
-  const [isopenSidebarVal, setisopenSidebarVal]=useState(true);
+  const [isopenSidebarVal, setisopenSidebarVal]=useState(false);
 
   return (
     <div>
