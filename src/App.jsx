@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
+import Home from "./Pages/HomePage/Home";
 import Header from "./Components/Header/Header";
 import axios from "axios";
 
