@@ -64,7 +64,7 @@ const CountryDropdown = () => {
         TransitionComponent={Transition}
       >
         <h5 className="mb-0">Choose Your Delivery Location</h5>
-        <p>Enter Your Address & we will specify the offer for your area.</p>
+        <p style={{fontSize :'14px'}}>Enter Your Address & we will specify the offer for your area.</p>
         <Button className="close_" onClick={() => setisOpenModel(false)}>
           <IoMdClose />
         </Button>
