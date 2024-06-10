@@ -13,15 +13,6 @@ body {
   background: #233a95;
 }
 
-@media (min-width: 1300px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1200px;
-  }
-}
 
 ::-webkit-scrollbar {
   width: 8px !important;
