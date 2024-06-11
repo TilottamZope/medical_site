@@ -1,9 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import "./HomeBanner.css";
-import Banner1 from '../../Assets/Banner1.jpg'
-import Banner2 from '../../Assets/Banner2.jpg'
-import Banner3 from '../../Assets/Banner3.jpg'
 
 const HomeBanner = (props) => {
   var settings = {
