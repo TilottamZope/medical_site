@@ -261,6 +261,7 @@ nav .navPart1 .cartWrapper .sidebarNav {
   left: 0px;
   /* padding: 15px 0px; */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 100;
 }
 
 nav .navPart1 .cartWrapper .sidebarNav.open{
@@ -279,11 +280,13 @@ nav .navPart1 .cartWrapper .sidebarNav ul li a {
   color: #000;
   width: 100%;
   text-decoration: none;
-  justify-content: flex-start !important
+  justify-content: flex-start !important;
+  width: 100% !important;
 }
 
 nav .navPart1 .cartWrapper .sidebarNav ul li a:hover {
-  background: transparent !important;  
+  background: #f1f1f1;
+  color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -306,6 +309,7 @@ nav .navPart2 ul li .submenu {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease-in-out;
+  z-index: 100;
 }
 
 nav .navPart2 ul li .submenu a {

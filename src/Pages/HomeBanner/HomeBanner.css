@@ -1,0 +1,32 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
+.homeBannerSection{
+    position: relative;
+    overflow: hidden;
+}
+
+.homeBannerSection *{
+    outline: none !important;
+}
+
+.homeBannerSection .slick-arrow{
+    position: absolute;
+    top: 45%;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px !important;
+    height: 40px !important;
+    background: #807c7c;
+    border-radius: 100% !important;
+}
+
+.homeBannerSection .slick-arrow.slick-next{
+    right: 10px !important;
+}
+
+.homeBannerSection .slick-arrow.slick-prev{
+    left: 10px !important;
+}
