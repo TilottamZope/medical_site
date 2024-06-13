@@ -4,6 +4,8 @@
 .homeBannerSection{
     position: relative;
     overflow: hidden;
+    /* border-radius: 10px; */
+    /* height: auto; */
 }
 
 .homeBannerSection *{

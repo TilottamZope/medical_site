@@ -23,7 +23,7 @@ const Navbar = () => {
                   <span className="icon1 me-2">
                     <MdMenu />
                   </span>
-                  <span className="text">ALL CATEGORIES</span>
+                  <span className="text text-light">ALL CATEGORIES</span>
                   <span className="icon2 ms-2">
                     <FaAngleDown />
                   </span>
